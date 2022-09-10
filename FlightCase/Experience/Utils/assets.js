@@ -2,7 +2,7 @@ export default [
     {
         name: "room",
         type: "glbModel",
-        path: "./../../public/models/IsometricFlightMateTest.glb"
+        path: "./../../public/models/PlaneMate.glb"
     },
 
     {
