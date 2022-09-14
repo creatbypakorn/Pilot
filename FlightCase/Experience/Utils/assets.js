@@ -8,6 +8,6 @@ export default [
     {
         name: "screen",
         type: "videoTexture",
-        path: "./../../public/textures/RollingRick.mp4"
+        path: ""
     }
 ];
