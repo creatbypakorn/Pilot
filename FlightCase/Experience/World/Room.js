@@ -120,7 +120,7 @@ export default class Room{
         this.mixer = new THREE.AnimationMixer(this.actualRoom);
         this.spin = this.mixer.clipAction(this.room.animations[0]);
         this.spin.play();
-        console.log(this.room);
+        // console.log(this.room);
     }
 
     onMouseMove(){
