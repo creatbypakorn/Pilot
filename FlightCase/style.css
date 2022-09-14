@@ -22,13 +22,13 @@ svg{
 :root{
   /* ---------------------*/
   --color-text-light:#333332;
-  --color-background-light: #FAF4E5;
-  --color-pink-light: #e5a1aa;
+  --color-background-light: #faf4e582;
+  --color-pink-light: #c88322;
   --color-green-light: #7AD0AC;
-  --color-blue-light: #8395CD;
+  --color-blue-light: #2765918b;
   /* ---------------------*/
-  --color-text-dark: #FAF4E5;
-  --color-background-dark: #8395CD;
+  --color-text-dark: #faf4e582;
+  --color-background-dark: #2765918b;
   
 }
 
@@ -139,6 +139,7 @@ svg{
 }
 
 .section{
+  border-radius: 0 80% 0 0 ;
   width: 50%;
   padding: 1000px 4%;
   margin: 0;

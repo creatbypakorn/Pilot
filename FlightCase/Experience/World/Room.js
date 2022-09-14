@@ -68,7 +68,47 @@ export default class Room{
         rectLight.rotation.y = -Math.PI / 0.5;
         this.actualRoom.add( rectLight )
 
-        // const rectLightHelper = new RectAreaLightHelper( rectLight );
+        const secondLight = new THREE.RectAreaLight(
+            0xffffff, 
+            intensity,  
+            width, 
+            height
+        );
+
+        secondLight.position.set( -7.88641, 3,  5 );
+        secondLight.rotation.x = -Math.PI / 0.5;
+        secondLight.rotation.y = -Math.PI / 0.5;
+        this.actualRoom.add( secondLight )
+
+        const thirdLight = new THREE.RectAreaLight(
+            0xffffff, 
+            intensity,  
+            width, 
+            height
+        );
+
+        thirdLight.position.set( -4.97838, 3,  5 );
+        thirdLight.rotation.x = -Math.PI / 2;
+        thirdLight.rotation.y = -Math.PI / 2;
+        this.actualRoom.add( thirdLight )
+
+        const Ballwidth = 0.05;
+        const Ballheight = 0.05;
+        const Ballintensity = 10;
+        const Ball = new THREE.RectAreaLight( 
+            0x990000, 
+            Ballintensity,  
+            Ballwidth, 
+            Ballheight 
+        );
+
+        Ball.position.set( -14.1977, 12,  -1.55827 );
+        Ball.rotation.x = -Math.PI / 2;
+        Ball.rotation.y = -Math.PI / 2;
+        this.actualRoom.add( Ball )
+        
+
+        // const rectLightHelper = new RectAreaLightHelper( Ball );
         // rectLight.add( rectLightHelper );
 
         this.scene.add(this.actualRoom);

@@ -20,13 +20,13 @@ export default class Controls{
 
 
     setPath(){
-        console.log(this.room);
+        // console.log(this.room);
         this.timeline = new GSAP.timeline();
         this.timeline.to(this.room.position, {
             x: 2.5,
             scrollTrigger:{
                 trigger: ".first-move",
-                markers: true,
+                markers: false,
                 start: "top top",
                 end: "bottom bottom",
                 scrub: 0.6,
