@@ -2,7 +2,7 @@ export default [
     {
         name: "room",
         type: "glbModel",
-        path: "./../../public/models/PlaneMate.glb"
+        path: "./../../public/models/Airport.glb"
     },
 
     {

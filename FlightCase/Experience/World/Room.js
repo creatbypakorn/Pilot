@@ -38,7 +38,7 @@ export default class Room{
             }
 
             //see through
-            if(child.name === "plane.002"){
+            if(child.name === "water"){
                 child.material = new THREE.MeshPhysicalMaterial();
                 child.material.roughness = 0;
                 child.material.color.set(0xffffff);
@@ -54,8 +54,8 @@ export default class Room{
             }
         });
 
-        const width = 1;
-        const height = 1;
+        const width = 0.5;
+        const height = 0.25;
         const intensity = 1;
         const rectLight = new THREE.RectAreaLight( 
             0xffffff, 
@@ -63,13 +63,13 @@ export default class Room{
             width, 
             height 
         );
-        rectLight.position.set( 5, 5.5,  0 );
-        rectLight.rotation.x = -Math.PI / 2;
-        rectLight.rotation.y = Math.PI / 2;
+        rectLight.position.set( 3.06789, 3,  -19.0607 );
+        rectLight.rotation.x = -Math.PI / 0.5;
+        rectLight.rotation.y = -Math.PI / 0.5;
         this.actualRoom.add( rectLight )
 
-        const rectLightHelper = new RectAreaLightHelper( rectLight );
-        rectLight.add( rectLightHelper );
+        // const rectLightHelper = new RectAreaLightHelper( rectLight );
+        // rectLight.add( rectLightHelper );
 
         this.scene.add(this.actualRoom);
         this.actualRoom.scale.set(0.11, 0.11, 0.11);

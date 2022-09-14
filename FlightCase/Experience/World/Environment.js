@@ -11,10 +11,10 @@ export default class Environment{
         this.resources = this.experience.resources;
 
         // this.gui = new GUI({ container: document.querySelector(".hero-main")});
-        this.obj = {
-            colorObj: {r:0, g:0, b:0,},
-            intensity: 3,
-        };
+        // this.obj = {
+        //     colorObj: {r:0, g:0, b:0,},
+        //     intensity: 3,
+        // };
         
         // console.log(this.actualRoom);
         this.setSunlight();
