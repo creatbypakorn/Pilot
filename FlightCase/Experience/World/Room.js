@@ -11,7 +11,6 @@ export default class Room{
         this.time = this.experience.time;
         this.room = this.resources.items.room;
         this.actualRoom = this.room.scene;
-        // console.log(this.actualRoom);
 
         this.lerp = {
             current: 0,
@@ -37,7 +36,6 @@ export default class Room{
                 });
             }
 
-            //see through
             if(child.name === "water"){
                 child.material = new THREE.MeshPhysicalMaterial();
                 child.material.roughness = 0;
@@ -106,10 +104,6 @@ export default class Room{
         Ball.rotation.x = -Math.PI / 2;
         Ball.rotation.y = -Math.PI / 2;
         this.actualRoom.add( Ball )
-        
-
-        // const rectLightHelper = new RectAreaLightHelper( Ball );
-        // rectLight.add( rectLightHelper );
 
         this.scene.add(this.actualRoom);
         this.actualRoom.scale.set(0.11, 0.11, 0.11);
@@ -120,7 +114,6 @@ export default class Room{
         this.mixer = new THREE.AnimationMixer(this.actualRoom);
         this.spin = this.mixer.clipAction(this.room.animations[0]);
         this.spin.play();
-        // console.log(this.room);
     }
 
     onMouseMove(){

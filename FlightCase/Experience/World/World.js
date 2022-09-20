@@ -20,17 +20,11 @@ export default class World{
             this.room = new Room();
             this.floor = new Floor();
             this.controls = new Controls;
-            // console.log("created room");
         });
 
         this.theme.on("switch", (theme) => {
             this.switchTheme(theme);
         });
-
-
-        // console.log(this.camera, this.camera.perspectiveCamera);
-
-        // this.setRenderer();
     }
 
     switchTheme(theme){

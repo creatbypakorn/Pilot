@@ -9,16 +9,7 @@ export default class Environment{
         this.experience = new Experience();
         this.scene = this.experience.scene;
         this.resources = this.experience.resources;
-
-        // this.gui = new GUI({ container: document.querySelector(".hero-main")});
-        // this.obj = {
-        //     colorObj: {r:0, g:0, b:0,},
-        //     intensity: 3,
-        // };
-        
-        // console.log(this.actualRoom);
         this.setSunlight();
-        // this.setGUI();
 
     }
 
@@ -41,8 +32,6 @@ export default class Environment{
         this.sunLight.shadow.camera.far = 20;
         this.sunLight.shadow.mapSize.set(2048, 2048);
         this.sunLight.shadow.normalBias = 0.2;
-        // const helper = new THREE.CameraHelper(this.sunLight.shadow.camera);
-        // this.scene.add(helper);
         this.sunLight.position.set(-1.5, 7, 3);
         this.scene.add(this.sunLight);
 
